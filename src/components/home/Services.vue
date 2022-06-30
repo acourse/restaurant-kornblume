@@ -6,7 +6,7 @@
         <div class="mx-4 rounded-full bg-gray-200 h-1 w-1"></div>
         <span class="font-heading text-xl text-white">Be unique with features</span>
       </div>
-      <h1 class="text-center font-heading text-5xl sm:text-6xl md:text-7xl mb-24">Features</h1>
+      <h1 class="text-center font-heading text-5xl sm:text-6xl md:text-7xl mb-24">Unser Restaurant</h1>
       <div class="flex flex-wrap -mx-4">
         <div class="w-full lg:w-1/3 px-4 pb-20 lg:pb-0 mb-16 lg:mb-0 relative">
           <div class="hidden lg:block absolute top-0 right-0 pt-14 h-full w-px">
@@ -20,9 +20,9 @@
                   </svg>
                 </span>
             <div class="mt-8">
-              <h5 class="font-heading text-xl mb-16">Create design and furniture</h5>
+              <h5 class="font-heading text-xl mb-16">Kulinarische Reise</h5>
               <div class="max-w-xs px-10 mx-auto">
-                <p class="font-light text-gray-500">The house by the pond cras ornare, some chords for a three moments, like a sense of truth that.</p>
+                <p class="font-light text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.</p>
               </div>
             </div>
           </div>
@@ -37,9 +37,9 @@
                   <svg width="40" height="28" viewbox="0 0 40 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="40" y="17.8184" width="4.27481" height="8.90909" rx="2.1374" transform="rotate(-180 40 17.8184)" fill="currentColor"></rect><rect x="31.145" y="22.9092" width="3.66412" height="19.0909" rx="1.83206" transform="rotate(-180 31.145 22.9092)" fill="currentColor"></rect><rect x="22.29" y="28" width="3.66412" height="19.0909" rx="1.83206" transform="rotate(-180 22.29 28)" fill="currentColor"></rect><rect x="13.4351" y="19.0908" width="3.66412" height="19.0909" rx="1.83206" transform="rotate(-180 13.4351 19.0908)" fill="currentColor"></rect><rect x="4.27478" y="20.3638" width="4.27481" height="11.4545" rx="2.13741" transform="rotate(-180 4.27478 20.3638)" fill="currentColor"></rect></svg>
                 </span>
             <div class="mt-8">
-              <h5 class="font-heading text-xl mb-16">New in: Modular Design</h5>
+              <h5 class="font-heading text-xl mb-16">Events im Restaurant</h5>
               <div class="max-w-xs px-10 mx-auto">
-                <p class="font-light text-gray-500">The lorem ipsum house by the pond cras ornare, some chords for a three moments, lorem like this.</p>
+                <p class="font-light text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.</p>
               </div>
             </div>
           </div>
@@ -50,9 +50,9 @@
                   <svg width="35" height="31" viewbox="0 0 35 31" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="3.525" height="30.55" rx="1.7625" fill="currentColor"></rect><rect x="11.75" y="10.5752" width="3.525" height="11.75" rx="1.7625" transform="rotate(90 11.75 10.5752)" fill="currentColor"></rect><rect x="32.9" y="16.4502" width="3.525" height="9.4" rx="1.7625" transform="rotate(90 32.9 16.4502)" fill="currentColor"></rect><rect x="15.275" width="3.525" height="30.55" rx="1.7625" fill="currentColor"></rect><rect x="30.55" width="3.525" height="30.55" rx="1.7625" fill="currentColor"></rect></svg>
                 </span>
             <div class="mt-8">
-              <h5 class="font-heading text-xl mb-16">Make every day feel like Sunday</h5>
+              <h5 class="font-heading text-xl mb-16">Lange Theke und Biergarten</h5>
               <div class="max-w-xs px-10 mx-auto">
-                <p class="font-light text-gray-500">The house by lorem ipsum the pond cras ornare, some chords for a three moments.</p>
+                <p class="font-light text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.</p>
               </div>
             </div>
           </div>

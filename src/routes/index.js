@@ -6,19 +6,19 @@ const routes = [
         name: 'Home',
         component: () => import('../views/Home.vue'),
         meta: {
-            title: 'grundsteuer-einfach-machen.de - Jetzt Ihre Grundsteuer erledigen.',
+            title: 'Restaurant Kornblume',
             metaTags: [
                 {
                     name: 'description',
-                    content: 'grundsteuer-einfach-machen.de bietet Privatperson die Möglichkeit ganz einfach die Daten für die Grundsteuer zusammenzustellen und einzureichen.'
+                    content: ''
                 },
                 {
                     property: 'og:description',
-                    content: 'grundsteuer-einfach-machen.de bietet Privatperson die Möglichkeit ganz einfach die Daten für die Grundsteuer zusammenzustellen und einzureichen.'
+                    content: ''
                 },
                 {
                     property: 'keywords',
-                    content: 'Grundsteuer, Steuern, Beratung, Formular'
+                    content: 'Restaurant, Hotel, Biergarten, '
                 }
             ]
         }
@@ -28,19 +28,19 @@ const routes = [
         name: 'Imprint',
         component: () => import('../views/Imprint.vue'),
         meta: {
-            title: 'grundsteuer-einfach-machen.de - Jetzt Ihre Grundsteuer erledigen.',
+            title: 'Restaurant Kornblume',
             metaTags: [
                 {
                     name: 'description',
-                    content: 'grundsteuer-einfach-machen.de bietet Privatperson die Möglichkeit ganz einfach die Daten für die Grundsteuer zusammenzustellen und einzureichen.'
+                    content: ''
                 },
                 {
                     property: 'og:description',
-                    content: 'grundsteuer-einfach-machen.de bietet Privatperson die Möglichkeit ganz einfach die Daten für die Grundsteuer zusammenzustellen und einzureichen.'
+                    content: ''
                 },
                 {
                     property: 'keywords',
-                    content: 'Grundsteuer, Steuern, Beratung, Formular'
+                    content: 'Restaurant, Hotel, Biergarten, '
                 }
             ]
         }
@@ -50,19 +50,19 @@ const routes = [
         name: 'DataPolicy',
         component: () => import('../views/DataPolicy.vue'),
         meta: {
-            title: 'grundsteuer-einfach-machen.de - Jetzt Ihre Grundsteuer erledigen.',
+            title: 'Restaurant Kornblume',
             metaTags: [
                 {
                     name: 'description',
-                    content: 'grundsteuer-einfach-machen.de bietet Privatperson die Möglichkeit ganz einfach die Daten für die Grundsteuer zusammenzustellen und einzureichen.'
+                    content: ''
                 },
                 {
                     property: 'og:description',
-                    content: 'grundsteuer-einfach-machen.de bietet Privatperson die Möglichkeit ganz einfach die Daten für die Grundsteuer zusammenzustellen und einzureichen.'
+                    content: ''
                 },
                 {
                     property: 'keywords',
-                    content: 'Grundsteuer, Steuern, Beratung, Formular'
+                    content: 'Restaurant, Hotel, Biergarten, '
                 }
             ]
         }
@@ -72,19 +72,19 @@ const routes = [
         name: 'NotFound',
         component: () => import('../views/NotFound.vue'),
         meta: {
-            title: 'grundsteuer-einfach-machen.de - Jetzt Ihre Grundsteuer erledigen.',
+            title: 'Restaurant Kornblume',
             metaTags: [
                 {
                     name: 'description',
-                    content: 'grundsteuer-einfach-machen.de bietet Privatperson die Möglichkeit ganz einfach die Daten für die Grundsteuer zusammenzustellen und einzureichen.'
+                    content: ''
                 },
                 {
                     property: 'og:description',
-                    content: 'grundsteuer-einfach-machen.de bietet Privatperson die Möglichkeit ganz einfach die Daten für die Grundsteuer zusammenzustellen und einzureichen.'
+                    content: ''
                 },
                 {
                     property: 'keywords',
-                    content: 'Grundsteuer, Steuern, Beratung, Formular'
+                    content: 'Restaurant, Hotel, Biergarten, '
                 }
             ]
         }
