@@ -1,7 +1,7 @@
 <template>
   <div class="relative flex items-start py-1">
     <div class="flex items-center h-5">
-      <input class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded disabled:border-slate-200 disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-not-allowed" type="checkbox" :checked="!!isRequired || !!checked" :disabled="isRequired" @change="$emit('update:cookie', $event.target.checked)" />
+      <input class="focus:ring-primary-500 h-4 w-4 text-primary-600 border-gray-300 rounded disabled:border-slate-200 disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-not-allowed" type="checkbox" :checked="!!isRequired || !!checked" :disabled="isRequired" @change="$emit('update:cookie', $event.target.checked)" />
     </div>
     <div class="ml-3 text-sm text-gray-500">
       <label class="font-medium text-gray-700">{{ cookie.name }}</label>

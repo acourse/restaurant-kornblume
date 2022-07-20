@@ -31,13 +31,14 @@
                     <p>{{ wizardData.startdate }} Uhr - {{ wizardData.enddate }} Uhr</p>
                 </div>
             </div>
+            <!--
             <div class="col-span-1">
                 <h1 class="font-berringer text-primary-700 text-xl font-semibold mb-1">Pausenverpflegung</h1>
                 <div class="flex flex-col">
                     <p>{{ wizardData.breakout }}</p>
                 </div>
             </div>
-            <!--
+
             <div class="col-span-1">
                 <h1 class="font-berringer text-primary-700 text-xl font-semibold mb-1">Getränke</h1>
                 <div class="flex flex-col">

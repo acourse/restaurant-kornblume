@@ -1,32 +1,38 @@
 <template>
-  <section class="py-24 md:pb-40 md:pt-52 relative">
+  <div class="py-24 relative">
     <div class="container px-4 mx-auto">
       <div class="flex flex-wrap items-center -mx-4">
         <div class="w-full lg:w-1/2 px-4 mb-24 lg:mb-0">
           <div class="mb-14">
-            <h2 class="font-heading text-5xl sm:text-7xl mb-2">Contact</h2>
-            <h3 class="font-heading text-2xl sm:text-4xl mb-10">Have any question? Text me!</h3>
-            <p class="mb-2 font-light">Mon - Fr 8:00 - 20:00 CET</p>
-            <p class="mb-14 font-light">Hotline +44 223 448 0171</p>
-            <div class="pb-20 border-b -mb-6">
-              <a class="inline-flex mb-6 mr-14 items-center" href="#">
-                <img class="mr-4" src="wrexa-assets/logos/brands/messenger.svg" alt="">
-                <span class="font-light">chatshxxk</span>
-              </a>
-              <a class="inline-flex mb-6 items-center" href="#">
-                <img class="mr-4" src="wrexa-assets/logos/brands/snapchat.svg" alt="">
-                <span class="font-light">snapshxxk</span>
-              </a>
+            <div class="max-w-3xl mx-auto text-left pb-12">
+              <h1 class="text-5xl font-berringer text-primary-700 mb-4">Kontakt</h1>
+              <p class="text-xl text-gray-500">Sie haben Fragen, rufen Sie uns an!</p>
+            </div>
+            <p class="mb-2 text-lg text-gray-500">Mo - Fr 17:00 - 21:30 Uhr </p>
+            <p class="mb-2 text-lg text-gray-500">Sa & So 12:00 - 21:30 Uhr </p>
+            <p class="mb-6 text-lg text-gray-500">Telefon <a class="hover:text-primary-700" href="tel:4921473469523">+49 214 73469523</a></p>
+            <div class="mt-3">
+              <p class="text-lg text-gray-500">
+                Restaurant Kornblume
+                <br>
+                Monheimer Str. 2B
+                <br>
+                51371 Leverkusen
+              </p>
             </div>
           </div>
-          <div><a class="inline-block w-full sm:w-auto px-7 py-4 mb-4 sm:mb-0 sm:mr-5 text-center font-medium bg-indigo-500 hover:bg-indigo-600 text-white rounded transition duration-250" href="#">Send a message</a><a class="inline-block w-full sm:w-auto px-7 py-4 text-center font-medium border border-gray-900 hover:text-gray-700 rounded transition duration-250" href="#">Live chat</a></div>
+          <div>
+            <a class="inline-block w-full sm:w-auto px-7 py-4 mb-4 sm:mb-0 sm:mr-5 text-center font-medium bg-primary-500 hover:bg-primary-600 text-white transition duration-250" href="mailto:kornblume@fettehennehotels.de">
+              Nachricht senden
+            </a>
+          </div>
         </div>
         <div class="w-full lg:w-1/2 px-4">
           <img class="block mx-auto" src="/img/restaurant/diningroom_4.jpg" alt="">
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>

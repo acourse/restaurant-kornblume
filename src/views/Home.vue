@@ -1,14 +1,23 @@
 <template>
   <div>
     <div>
-      <Hero/>
-      <Services/>
-      <Overview/>
-      <Menu/>
-      <Events/>
-      <Team/>
-      <Reservation/>
-      <Contact/>
+      <section id="home">
+        <Hero/>
+      </section>
+      <section id="restaurant">
+        <Services/>
+        <Overview/>
+      </section>
+      <section id="menu">
+        <Menu/>
+      </section>
+      <section id="events">
+        <Events/>
+      </section>
+      <section id="reservation">
+        <Reservation/>
+        <Contact/>
+      </section>
     </div>
   </div>
 </template>
@@ -22,6 +31,30 @@ import Contact from "../components/home/Contact.vue";
 import Menu from "../components/home/Menu.vue";
 import Team from "../components/home/Team.vue";
 import Events from "../components/home/Events.vue";
+import { inject, onMounted } from "vue";
+
+const navigation = inject('navigation')
+onMounted(() => {
+  const sections = document.querySelectorAll("section");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (pageYOffset >= sectionTop - sectionHeight / 4) {
+        current = section.getAttribute("id");
+      }
+    });
+    navigation.forEach((link) => {
+      link.active = false
+      if (link.href === current) {
+        link.active = true
+      }
+    })
+  })
+})
+
 </script>
 
 <style scoped>

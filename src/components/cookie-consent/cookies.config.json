@@ -9,29 +9,14 @@
         "name": "Google Places",
         "short_desc": "Wird für die Darstellung von Google Reviews verwendet.",
         "cookie_name": "places"
-      }
+      },
+        {
+            "key":  "theFork",
+            "name": "The Fork",
+            "short_desc": "Wird für die Darstellung von unserem Restaurantbuchungstool genutzt.",
+            "cookie_name": "fork"
+        }
     ],
     "required": true
-  },
-  "marketing": {
-    "name": "Marketing Cookies",
-    "short_desc": "Wird für Marketing Funktionen verwendet.",
-    "long_desc": "Beispielsweise personalisierte Werbung, E-Mail Marketing & Co.",
-    "cookies": [
-      {
-        "key": "youtube",
-        "name": "Youtube",
-        "short_desc": "Wird zur Darstellung von Youtube-Videos benutzt.",
-        "long_desc": "Dabei wird personalisierte Werbung, E-Mail Marketing, Tracking und dergleichen von Google betrieben.",
-        "cookie_name": "youtube"
-      },
-      {
-        "key":  "elfSight",
-        "name": "Elfsight",
-        "short_desc": "Wird für gewisse Komponenten, sowie den Instagram-Feed genutzt.",
-        "long_desc": "Damit Inhalte wie der Instagram Feed dargestellt werden können. Ebenfalls wird Google Analytics zum Tracking der Clicks genutzt.",
-        "cookie_name": "elfe"
-      }
-    ]
   }
 }

@@ -4,22 +4,26 @@
             <keep-alive>
                 <component ref="currentStep" :is="currentStep" @updateAsyncState="updateAsyncState" :wizard-data="form"></component>
             </keep-alive>
-            <div class="progress-bar w-full rounded-full relative my-4 h-[12px] bg-primary-400">
-                <div class="rounded-full absolute h-full bg-primary-700 transition-all duration-300" :style="`width: ${progress}%`"></div>
+            <div class="progress-bar w-full rounded-full relative my-4 h-[12px] bg-primary-100">
+                <div class="rounded-full absolute h-full bg-primary-500 transition-all duration-300" :style="`width: ${progress}%`"></div>
             </div>
             <div class="buttons flex justify-end space-x-4">
-                <button
+                <PrimaryButton
+                    button
+                    light
+                    title="Zurück"
                     @click="goBack"
                     v-if="currentStepNumber > 1"
-                    class="inline-block font-medium text-white bg-accent-600 hover:bg-accent-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-500 px-6 py-2text-lg font-urw relative transition-all duration-300 request-button"
-                >Zurück
-                </button>
-                <button
+                >
+                </PrimaryButton>
+                <PrimaryButton
+                    button
+                    solid
+                    :title="isLastStep ? 'Anfrage abschicken' : 'Weiter'"
                     @click="nextButtonAction"
                     :class="isLastStep ? 'success' : 'declined'"
-                    class="inline-block font-medium text-white bg-accent-600 hover:bg-accent-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-500 px-6 py-2 text-lg font-urw relative transition-all duration-300 request-button"
-                >{{ isLastStep ? 'Anfrage abschicken' : 'Weiter' }}
-                </button>
+                >
+                </PrimaryButton>
             </div>
         </div>
         <div v-if="asyncState === 'success'">
@@ -33,7 +37,7 @@
                     <!--<a href="/"
                        class="sm:block w-full sm:w-auto text-middleblue hover:bg-middleblue hover:text-white px-6 py-2 rounded text-lg border border-middleblue relative transition-all duration-300">Zurück
                         zum Start</a>-->
-                    <button @click="backToStart" class="sm:block w-full sm:w-auto text-accent-600 hover:bg-accent-700 hover:text-white px-6 py-2 text-lg border border-accent-500 relative transition-all duration-300">Zurück zum Start</button>
+                    <PrimaryButton @click="backToStart" solid title="Zurück zum Start"></PrimaryButton>
                 </div>
             </div>
         </div>
@@ -48,13 +52,13 @@
                     <!--<a href="/"
                        class="sm:block w-full sm:w-auto text-middleblue hover:bg-middleblue hover:text-white px-6 py-2 rounded text-lg border border-middleblue relative transition-all duration-300">Zurück
                         zum Start</a>-->
-                    <button @click="backToStart" class="sm:block w-full sm:w-auto text-accent-600 hover:bg-accent-700 hover:text-white px-6 py-2 text-lg border border-accent-500 relative transition-all duration-300">Zurück zum Start</button>
+                    <PrimaryButton @click="backToStart" solid title="Zurück zum Start"></PrimaryButton>
                 </div>
             </div>
         </div>
         <div class="loading-wrapper mt-16" v-if="asyncState === 'pending'">
             <div
-                class="loader flex flex-wrap p-2 mx-auto items-center justify-center border border-indigo-500 text-xl text-gray-500">
+                class="loader flex flex-wrap p-2 mx-auto items-center justify-center border border-primary-500 text-xl text-gray-500">
                 <img src="img/svg/spinner.svg" alt="">
                 <p class="mr-4">Wir bearbeiten gerade Ihre Anfrage!</p>
             </div>
@@ -71,11 +75,13 @@ import FormUserAddress from './FormUserAddress.vue'
 import emailjs from '@emailjs/browser';
 import FormDate from "./FormDate.vue";
 import FormStarter from "./FormStarter.vue";
+import PrimaryButton from "../reusable/PrimaryButton.vue";
 // import FormDrinks from "./FormDrinks";
 
 export default {
     name: 'FormWizard',
     components: {
+        PrimaryButton,
         FormType,
         FormFood,
         FormOverview,

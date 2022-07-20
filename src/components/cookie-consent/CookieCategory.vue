@@ -3,20 +3,20 @@
     <div class="flex flex-row justify-between items-center overflow-x-hidden">
       <div class="relative flex items-start py-1 w-5/6">
         <div class="flex items-center h-5 ml-1">
-          <input class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded disabled:border-slate-200 disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-not-allowed" type="checkbox" :checked="!!categoryConfig.required || !!cookieMap.hasConsented" :disabled="categoryConfig.required" @change="updateCategory($event)" />
+          <input class="focus:ring-primary-500 h-4 w-4 text-primary-600 border-gray-300 rounded disabled:border-slate-200 disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-not-allowed" type="checkbox" :checked="!!categoryConfig.required || !!cookieMap.hasConsented" :disabled="categoryConfig.required" @change="updateCategory($event)" />
         </div>
         <div class="ml-3 text-sm text-gray-500">
           <label class="font-medium text-gray-700">{{ categoryConfig.name }}</label>
-          <p>{{ categoryConfig.short_desc }} {{ showDescription ? categoryConfig.long_desc : '' }}</p>
+          <p :class="[showDescription ? 'w-5/6' : '']">{{ categoryConfig.short_desc }} {{ showDescription ? categoryConfig.long_desc : '' }}</p>
           <button class="text-gray-700 hover:underline hover:text-gray-800" v-if="categoryConfig.long_desc" @click="showDescription = !showDescription">{{ showDescription ? 'Weniger anzeigen' : 'Mehr erfahren' }} <span aria-hidden="true">{{ showDescription ? '&larr;' : '&rarr;' }}</span></button>
         </div>
       </div>
-      <div class="w-1/6 flex justify-end items-center">
-        <svg @click.prevent="toggleAccordion(accordionOpen)" v-if="categoryConfig.cookies" class="w-3 h-3 fill-current text-gray-700 flex-shrink-0 mr-8 -ml-12 cursor-pointer z-10" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-          <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'rotate-180': accordionOpen}" />
-          <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'rotate-180 opacity-0': accordionOpen}" />
-        </svg>
-      </div>
+        <div class="w-1/6 flex justify-end items-center">
+            <svg @click.prevent="toggleAccordion(accordionOpen)" v-if="categoryConfig.cookies" class="w-3 h-3 fill-current text-gray-700 flex-shrink-0 mr-8 -ml-12 cursor-pointer z-10" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'rotate-180': accordionOpen}" />
+                <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'rotate-180 opacity-0': accordionOpen}" />
+            </svg>
+        </div>
     </div>
     <transition
         name="expand"
@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import CookieInput from "./CookieInput";
+import CookieInput from "./CookieInput.vue";
 
 export default {
   name: "CookieCategory",

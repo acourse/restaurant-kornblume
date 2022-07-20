@@ -11,3 +11,33 @@
     }
 }
 
+::-webkit-scrollbar {
+    @apply w-[3px]
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    @apply bg-primary-600 bg-opacity-20
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    @apply bg-primary-700 rounded-full bg-opacity-50
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary-700 rounded-full
+}
+
+.active-selection {
+    @apply shadow-xl after:border-2 after:border-primary-300 after:content-[''] after:absolute after:block after:inset-0 transition-all duration-300
+}
+
+.selection-hover {
+    @apply hover:shadow-xl hover:after:border-2 hover:after:border-primary-300 hover:after:content-[''] after:absolute hover:after:block hover:after:inset-0 transition-all duration-300
+}
+
+.error {
+    @apply w-full mt-1 text-red-600 text-right text-sm
+}

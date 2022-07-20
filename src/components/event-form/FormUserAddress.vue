@@ -9,17 +9,17 @@
         <form class="grid sm:grid-cols-2 gap-y-6 gap-x-4">
           <div class="sm:col-span-2">
             <label class="block font-berringer font-medium text-gray-500" for="street">Straße</label>
-            <input v-model="v$.form.street.$model" type="text" placeholder="Schildsheider Straße 47" autocomplete="street-address" class="py-3 px-4 block w-full shadow-sm focus:ring-accent-500 focus:border-accent-500 border-gray-300" id="street">
+            <input v-model="v$.form.street.$model" type="text" placeholder="Schildsheider Straße 47" autocomplete="street-address" class="py-3 px-4 block w-full shadow-sm focus:ring-primary-500 focus:border-primary-500 border-gray-300" id="street">
             <div v-for="error of v$.form.street.$errors" :key="error.$uid" class="error">{{ error.$message }}</div>
           </div>
           <div class="">
             <label class="block font-berringer font-medium text-gray-500" for="postalcode">PLZ</label>
-            <input v-model="v$.form.plz.$model" type="number" autocomplete="postal-code" placeholder="40699" class="py-3 px-4 block w-full shadow-sm focus:ring-accent-500 focus:border-accent-500 border-gray-300" id="postalcode">
+            <input v-model="v$.form.plz.$model" type="number" autocomplete="postal-code" placeholder="40699" class="py-3 px-4 block w-full shadow-sm focus:ring-primary-500 focus:border-primary-500 border-gray-300" id="postalcode">
             <div v-for="error of v$.form.plz.$errors" :key="error.$uid" class="error">{{ error.$message }}</div>
           </div>
           <div class="">
             <label class="block font-berringer font-medium text-gray-500" for="city">Stadt</label>
-            <input type="text" v-model="v$.form.city.$model" placeholder="Erkrath" autocomplete="street-address" class="py-3 px-4 block w-full shadow-sm focus:ring-accent-500 focus:border-accent-500 border-gray-300" id="city">
+            <input type="text" v-model="v$.form.city.$model" placeholder="Erkrath" autocomplete="street-address" class="py-3 px-4 block w-full shadow-sm focus:ring-primary-500 focus:border-primary-500 border-gray-300" id="city">
             <div v-for="error of v$.form.city.$errors" :key="error.$uid" class="error">{{ error.$message }}</div>
           </div>
         </form>

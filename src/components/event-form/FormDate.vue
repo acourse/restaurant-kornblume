@@ -5,7 +5,7 @@
             Wir sind durchgehend geöffnet und bieten flexible Zeiten der Buchung an!
         </h2>
         <div class="py-12 mb-8 flex justify-center items-center md:space-y-0 space-y-4 md:space-x-4">
-            <v-date-picker class="datepicker" v-model="range" mode="dateTime" :timezone="timezone" is24hr isRange color="red"/>
+            <v-date-picker class="datepicker" v-model="range" mode="dateTime" :timezone="timezone" is24hr isRange color="blue"/>
         </div>
         <div v-if="v$.range.$error" class="error">Bitte ein Datum wählen!</div>
     </div>

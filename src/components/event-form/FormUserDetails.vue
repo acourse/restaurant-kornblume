@@ -9,38 +9,38 @@
         <form class="grid grid-cols-1 gap-y-6">
           <div class="">
             <label class="block font-berringer font-medium text-gray-500" for="name">Name</label>
-            <input v-model="v$.form.name.$model" type="text" placeholder="Name" autocomplete="name" class="py-3 px-4 block w-full shadow-sm focus:ring-accent-500 focus:border-accent-500 border-gray-300" id="name">
+            <input v-model="v$.form.name.$model" type="text" placeholder="Name" autocomplete="name" class="py-3 px-4 block w-full shadow-sm focus:ring-primary-500 focus:border-primary-500 border-gray-300" id="name">
             <div v-for="error of v$.form.name.$errors" :key="error.$uid" class="error">{{ error.$message }}</div>
           </div>
           <div class="">
             <label class="block font-berringer font-medium text-gray-500" for="company">Unternehmen</label>
-            <input v-model="v$.form.company.$model" type="text" placeholder="Unternehmen" autocomplete="organization" class="py-3 px-4 block w-full shadow-sm focus:ring-accent-500 focus:border-accent-500 border-gray-300" id="company">
+            <input v-model="v$.form.company.$model" type="text" placeholder="Unternehmen" autocomplete="organization" class="py-3 px-4 block w-full shadow-sm focus:ring-primary-500 focus:border-primary-500 border-gray-300" id="company">
           </div>
           <div class="">
             <label class="block font-berringer font-medium text-gray-500" for="email">Email</label>
-            <input type="text" v-model="v$.form.email.$model" placeholder="beispiel@email.com" autocomplete="email" class="py-3 px-4 block w-full shadow-sm focus:ring-accent-500 focus:border-accent-500 border-gray-300" id="email">
+            <input type="text" v-model="v$.form.email.$model" placeholder="beispiel@email.com" autocomplete="email" class="py-3 px-4 block w-full shadow-sm focus:ring-primary-500 focus:border-primary-500 border-gray-300" id="email">
             <div v-for="error of v$.form.email.$errors" :key="error.$uid" class="error">{{ error.$message }}</div>
           </div>
             <div class="">
                 <label class="block font-berringer font-medium text-gray-500" for="phone">Telefon</label>
-                <input type="text" v-model="v$.form.phone.$model" placeholder="beispiel@email.com" autocomplete="tel" class="py-3 px-4 block w-full shadow-sm focus:ring-accent-500 focus:border-accent-500 border-gray-300" id="phone">
+                <input type="text" v-model="v$.form.phone.$model" placeholder="beispiel@email.com" autocomplete="tel" class="py-3 px-4 block w-full shadow-sm focus:ring-primary-500 focus:border-primary-500 border-gray-300" id="phone">
                 <div v-for="error of v$.form.phone.$errors" :key="error.$uid" class="error">{{ error.$message }}</div>
             </div>
             <div class="flex flex-row">
                 <label class="font-berringer font-medium text-gray-500 pr-2" >Videokonferenz geplant?</label>
-                <input type="checkbox" v-model="v$.form.videoconferenceIsRequired.$model" class="py-2 px-2 block my-auto shadow-sm text-accent-600 focus:ring-accent-500 focus:border-accent-500 border-gray-300" >
+                <input type="checkbox" v-model="v$.form.videoconferenceIsRequired.$model" class="py-2 px-2 block my-auto shadow-sm text-primary-600 focus:ring-primary-500 focus:border-primary-500 border-gray-300" >
                 <div v-for="error of v$.form.videoconferenceIsRequired.$errors" :key="error.$uid" class="error">{{ error.$message }}</div>
             </div>
             <div>
                 <div class="flex flex-row pb-1">
                     <label class="font-berringer font-medium text-gray-500 pr-2">Zimmer erwünscht?</label>
-                    <input type="checkbox" v-model="roomsRequired" class="py-2 px-2 block my-auto shadow-sm text-accent-600 focus:ring-accent-500 focus:border-accent-500 border-gray-300" >
+                    <input type="checkbox" v-model="roomsRequired" class="py-2 px-2 block my-auto shadow-sm text-primary-600 focus:ring-primary-500 focus:border-primary-500 border-gray-300" >
                 </div>
                 <div class="" v-if="roomsRequired" >
                     <div class="relative ">
                         <input v-model="v$.form.roomsAmount.$model" type="number" placeholder="Anzahl"
                                min="0"
-                               class="block w-full text-base text-gray-700 shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-accent-500 focus:border-accent-500 border-gray-300 pl-20">
+                               class="block w-full text-base text-gray-700 shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-primary-500 focus:border-primary-500 border-gray-300 pl-20">
                         <div class="absolute inset-0 right-auto flex items-center pointer-events-none">
                             <span class="text-base text-gray-500 font-medium px-3">Zimmer</span>
                         </div>

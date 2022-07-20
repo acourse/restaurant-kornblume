@@ -26,7 +26,7 @@
               <div class="mb-2">
                 <div class="flex justify-between items-center">
                   <div class="text-lg font-semibold text-slate-800">{{ consentText.dataPolicy }}</div>
-                  <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mr-2" @click="showPolicy = false">
+                  <button class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md shadow-sm text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 mr-2" @click="showPolicy = false">
                     <div class="sr-only">Close</div>
                     {{ consentText.backToConsent }}
                   </button>
@@ -60,9 +60,9 @@
                 </div>
               </div>
               <div class="flex flex-wrap sm:justify-end justify-center sm:space-y-0 space-y-1 sm:space-x-2 mt-2">
-                <button class="sm:inline-flex w-full sm:w-auto items-center px-3 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500" @click="declineAll">{{ consentText.decline }}</button>
-                <button class="sm:inline-flex w-full sm:w-auto items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-yellow-700 bg-yellow-100 hover:bg-yellow-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500" @click="save">{{ consentText.selection }}</button>
-                <button class="sm:inline-flex w-full sm:w-auto items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md shadow-sm text-white bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500" @click="acceptAll">{{ consentText.accept }}</button>
+                <button class="sm:inline-flex w-full sm:w-auto items-center px-3 py-2 border border-gray-300 shadow-sm text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500" @click="declineAll">{{ consentText.decline }}</button>
+                <button class="sm:inline-flex w-full sm:w-auto items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-primary-700 bg-primary-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500" @click="save">{{ consentText.selection }}</button>
+                <button class="sm:inline-flex w-full sm:w-auto items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md shadow-sm text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500" @click="acceptAll">{{ consentText.accept }}</button>
               </div>
             </div>
           </div>
@@ -74,8 +74,8 @@
 
 <script>
 /* eslint-disable */
-import CookieCategory from "./CookieCategory";
-import DataPolicy from "./DataPolicy";
+import CookieCategory from "./CookieCategory.vue";
+import DataPolicy from "./DataPolicy.vue";
 const defaultTexts = {
   accept: 'Alle akzeptieren',
   selection: 'Auswahl akzeptieren',

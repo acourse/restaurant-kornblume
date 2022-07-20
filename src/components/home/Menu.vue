@@ -1,14 +1,14 @@
 <template>
-  <section class="bg-white">
+  <div class="bg-white">
     <div class="pt-24 pb-40 md:pt-40">
       <div class="container px-4 mx-auto">
         <div class="flex flex-wrap items-center -mx-4">
           <div class="w-full lg:w-1/2 px-4 mb-24 lg:mb-0">
             <div class="max-w-md mx-auto">
-              <h1 class="font-heading text-5xl sm:text-6xl mb-8">What you need, when you need it</h1>
-              <p class="max-w-sm font-light text-xl mb-8">The pond cras ornare, some chords for a three moments, like a sense of truth that comes from within.</p>
-              <p class="font-light text-gray-600 mb-20">The pond cras ornare, some chords for a three moments, like a sense of truth that comes from within.</p>
-              <a class="inline-block w-full sm:w-auto px-7 py-4 text-center font-medium bg-indigo-500 hover:bg-indigo-600 text-white rounded transition duration-250" href="#">Discover Now</a>
+              <h1 class="font-heading text-5xl sm:text-6xl mb-8">Unsere kulinarische Reise</h1>
+              <p class="max-w-sm font-light text-xl mb-8">Die Kornblume steht für Treue und Hoffnung. So möchten wir uns mit dem Kristallhotel für Rheindorf bekennen und sind voller Vorfreude mit der Kornblume wieder Leben ins Hotel Kristall und nach Rheindorf zu bringen. </p>
+              <p class="font-light text-gray-600 mb-20">Zudem stammt die tolle Blüte aus dem Balkan, ähnlich wie unsere Vorbesitzer.</p>
+              <a class="inline-block w-full sm:w-auto px-7 py-4 text-center font-medium bg-primary-500 hover:bg-primary-600 text-white transition duration-250" href="#">Jetzt reservieren</a>
             </div>
           </div>
           <div class="w-full lg:w-1/2 px-4">
@@ -22,7 +22,7 @@
     </div>
     <div>
       <div class="mx-auto max-w-7xl pt-12 pb-24 px-4 sm:px-6 lg:px-8">
-        <TabGroup :defaultIndex="2" as="div" class="h-full">
+        <TabGroup :defaultIndex="1" as="div" class="h-full">
           <TabList as="nav" class="grid sm:grid-cols-3 grid-cols-2 items-center justify-center border-b-2 border-gray-200">
             <Tab
                 v-for="category in categories"
@@ -31,7 +31,7 @@
                 v-slot="{ selected }"
                 class="-mb-px"
             >
-              <button :class="[selected ? 'border-accent-800 text-accent-900' : 'border-transparent text-primary-700 hover:primary-900 hover:border-primary-300', 'py-4 px-1 text-center border-b-2 font-medium text-sm outline-none']">{{ category.name }}</button>
+              <button :class="[selected ? 'border-primary-500 text-primary-600' : 'border-transparent text-gray-700 hover:gray-900 hover:border-gray-300', 'py-4 px-1 text-center border-b-2 font-medium text-sm outline-none']">{{ category.name }}</button>
             </Tab>
           </TabList>
           <TabPanels class="lg:min-h-[20rem]">
@@ -45,10 +45,10 @@
                     :key="item.id"
                     :class="item.headline ? 'lg:col-span-3 sm:col-span-2 col-span-1 pt-4 px-4' : 'p-4', 'relative'"
                 >
-                  <h1 v-if="item.headline" class="text-xl text-primary-900 font-berringer">{{ item.header }}</h1>
+                  <h1 v-if="item.headline" class="text-xl text-primary-500 font-berringer">{{ item.header }}</h1>
                   <div v-else class="cursor-pointer flex flex-row items-start justify-between space-x-4">
                     <div class="">
-                      <h1 class="font-bold text-primary-900 font-berringer">{{ item.title }}</h1>
+                      <h1 class="font-bold text-gray-700 font-berringer">{{ item.title }}</h1>
                       <p class="text-gray-500 text-sm font-berringer">{{ item.description }}</p>
                     </div>
                     <div class="flex items-end ">
@@ -62,7 +62,7 @@
         </TabGroup>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script setup>
