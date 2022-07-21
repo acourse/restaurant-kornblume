@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'berringer': ['berringer-rough', 'sans-serif'],
+        berringer: ['berringer-rough', 'sans-serif'],
       },
       colors: {
         'primary-50': '#f0f9ff',
