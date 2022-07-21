@@ -2,7 +2,7 @@
   <div class="relative pt-24 pb-24 md:pb-52 bg-gray-100 overflow-hidden">
     <div class="hidden lg:block absolute top-0 right-0 mt-40 mr-20 h-full">
       <a class="inline-block" href="#">
-        <img class="w-16 h-16" src="wrexa-assets/logos/logo-wrexa.svg" alt="">
+        <img class="w-16 h-16" src="/svg/logo.svg" alt="">
       </a>
     </div>
     <div class="container px-4 mx-auto">
@@ -11,7 +11,7 @@
       </div>
       <div class="lg:hidden mb-12">
         <a class="inline-block" href="#">
-          <img class="w-16 h-16" src="wrexa-assets/logos/logo-wrexa.svg" alt="">
+          <img class="w-16 h-16" src="/svg/logo.svg" alt="">
         </a>
       </div>
       <div class="max-w-3xl xl:max-w-4xl mb-24 sm:mb-44">

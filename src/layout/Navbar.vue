@@ -14,10 +14,10 @@
         <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
           <div class="flex-shrink-0 flex items-center">
             <router-link to="/">
-              <img class="block lg:hidden h-12 w-auto" src="svg/flower.svg" alt="Kornblume"/>
+              <img class="block lg:hidden h-12 w-auto" src="/svg/flower.svg" alt="Kornblume"/>
             </router-link>
             <router-link to="/">
-              <img class="hidden lg:block h-8 w-auto" src="svg/logo.svg" alt="Kornblume"/>
+              <img class="hidden lg:block h-8 w-auto" src="/svg/logo.svg" alt="Kornblume"/>
             </router-link>
           </div>
           <ul class="hidden sm:ml-6 sm:flex sm:space-x-4 lg:space-x-8 nav-links">
@@ -83,7 +83,7 @@
             </TransitionChild>
             <div class="flex-shrink-0 flex items-center px-4 mt-6">
               <router-link @click="setSidebar(false)" to="/">
-                <img class="h-12 w-auto" src="svg/logo.svg" alt="Kornblume"/>
+                <img class="h-12 w-auto" src="/svg/logo.svg" alt="Kornblume"/>
               </router-link>
             </div>
             <nav class="mt-5 flex-shrink-0 h-full divide-gray-500 divide-solid overflow-y-auto font-primary"

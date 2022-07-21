@@ -59,7 +59,7 @@
         <div class="loading-wrapper mt-16" v-if="asyncState === 'pending'">
             <div
                 class="loader flex flex-wrap p-2 mx-auto items-center justify-center border border-primary-500 text-xl text-gray-500">
-                <img src="img/svg/spinner.svg" alt="">
+                <img src="/svg/spinner.svg" alt="">
                 <p class="mr-4">Wir bearbeiten gerade Ihre Anfrage!</p>
             </div>
         </div>
