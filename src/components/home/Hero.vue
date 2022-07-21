@@ -7,8 +7,8 @@
             <div class="w-full px-4 mb-6 text-center">
               <span class="text-2xl">Das neue Restaurant im Kristallhotel Fettehenne!</span>
             </div>
-            <div class="mb-6">
-              <img class="h-20" src="/svg/logo.svg">
+            <div class="mb-6 px-4">
+              <img class="sm:h-20 h-16" src="/svg/logo.svg">
             </div>
             <div class="w-full px-4 text-center">
               <h1 class="font-heading text-4xl sm:text-6xl font-berringer">Woanders zu Gast. Bei uns zuhause!</h1>
