@@ -129,8 +129,8 @@ const categories = ref([
         id: 7,
         headline: false,
         header: "",
-        title: "FETTEHENNE TEller (2 PAX))",
-        description: "Kleines Hacksteak, Rumpsteak, Schweinemedaillons, Hähnchen und Speck dazu pommes, Gemüsereis und Salat",
+        title: "FETTEHENNE Tellerer (2 PAX))",
+        description: "Kleines Hacksteak, Rumpsteak, Schweinemedaillons, Hähnchen und Speck dazu Pommes, Gemüsereis und Salat",
         price: "19.50/32.00"
       },
       {
@@ -138,7 +138,7 @@ const categories = ref([
         headline: false,
         header: "",
         title: "Schnitzel Wiener Art",
-        description: "dazu pommes und salat",
+        description: "dazu Pommes und Salat",
         price: "13.50"
       },
       {
@@ -146,7 +146,7 @@ const categories = ref([
         headline: false,
         header: "",
         title: "Pfefferschnitzel",
-        description: "mit Pfeffersauce dazu Pommes und salat",
+        description: "mit Pfeffersauce dazu Pommes und Salat",
         price: "14.80"
       },
       {
@@ -161,8 +161,8 @@ const categories = ref([
         id: 11,
         headline: false,
         header: "",
-        title: "fettuccine mit Lachs",
-        description: "frische fettuccine in einer Hummer-sahne-sauce und Lachswürfeln ",
+        title: "Fettuccine mit Lachs",
+        description: "Frische Fettuccine in einer Hummer-Sahne-Sauce und Lachswürfeln ",
         price: "13.80"
       },
       {
@@ -170,15 +170,15 @@ const categories = ref([
         headline: false,
         header: "",
         title: "Rumpsteak",
-        description: "mit pfefferrahmsauce, dazu Bratkartoffeln und Salat",
+        description: "mit Pfefferrahmsauce, dazu Bratkartoffeln und Salat",
         price: "28.50"
       },
       {
         id: 13,
         headline: false,
         header: "",
-        title: "rotbarschfilet",
-        description: "mit einer Senf-sahne-sauce, dazu Salzkartoffeln und salat ",
+        title: "Rotbarschfilet",
+        description: "mit einer Senf-Sahne-Sauce, dazu Salzkartoffeln und Salat ",
         price: "18.50"
       },
       {
@@ -186,7 +186,7 @@ const categories = ref([
         headline: false,
         header: "",
         title: "Kalbsleber",
-        description: "mit Bratkartoffeln, röstzwiebeln und salat",
+        description: "mit Bratkartoffeln, Röstzwiebeln und Salat",
         price: "17.50"
       },
       {
@@ -194,7 +194,7 @@ const categories = ref([
         headline: false,
         header: "",
         title: "Schweinemedaillons",
-        description: "mit Pfeffersauce oder Champignonsauce, dazu kroketten und salat",
+        description: "mit Pfeffersauce oder Champignonsauce, dazu Kroketten und Salat",
         price: "17.80"
       },
       {
@@ -202,7 +202,7 @@ const categories = ref([
         headline: false,
         header: "",
         title: "Cordon Bleu",
-        description: "gefüllt mit Käse und Schinken, dazu pommes und salat",
+        description: "gefüllt mit Käse und Schinken, dazu Pommes und Salat",
         price: "17.80"
       },
       {
@@ -210,31 +210,31 @@ const categories = ref([
         headline: false,
         header: "",
         title: "Hähnchenbrustfilet",
-        description: "Mit pfirsich und Käse überbacken, dazu kroketten und salat",
+        description: "Mit Pfirsich und Käse überbacken, dazu Kroketten und Salat",
         price: "15.50"
       },
       {
         id: 18,
         headline: false,
         header: "",
-        title: "fettuccine Kristall",
-        description: "Mit Garnelen in einer Knoblauch-Sahne-Sauce, mit kräutern und Käse überbacken ",
+        title: "Fettuccine Kristall",
+        description: "Mit Garnelen in einer Knoblauch-Sahne-Sauce, mit Kräutern und Käse überbacken ",
         price: "15.80"
       },
       {
         id: 19,
         headline: false,
         header: "",
-        title: "LAchsfilet vom Grill",
-        description: "mit Salzkartoffeln, Brokkoli und Zitronen-Hollandaise, dazu salat ",
+        title: "Lachsfilet vom Grill",
+        description: "mit Salzkartoffeln, Brokkoli und Zitronen-Hollandaise, dazu Salat ",
         price: "21.50"
       },
       {
         id: 20,
         headline: false,
         header: "",
-        title: "pfefferspieß",
-        description: "mit bratkartoffeln und salat",
+        title: "Pfefferspieß",
+        description: "mit Bratkartoffeln und Salat",
         price: "21.50"
       }
     ]
@@ -246,15 +246,15 @@ const categories = ref([
         id: 21,
         headline: true,
         header: "Dessert Kiste 7€",
-        title: "schokomousse",
-        description: "mit Butterkeksen und einer Rumkirsche",
-        price: "5.40"
+        title: "",
+        description: "",
+        price: ""
       },
       {
         id: 22,
         headline: false,
         header: "",
-        title: "schokomousse",
+        title: "Schokomousse",
         description: "mit Butterkeksen und einer Rumkirsche",
         price: ""
       },
