@@ -7,7 +7,7 @@
         font-family: "Berringer Rough";
         font-weight: 400;
         font-style: normal;
-        src: url('./fonts/Berringer Rough.woff') format('woff'), url('./fonts/Berringer Rough.woff2') format('woff2')
+        src: url('/fonts/Berringer Rough.woff') format('woff'), url('/fonts/Berringer Rough.woff2') format('woff2')
     }
 }
 
